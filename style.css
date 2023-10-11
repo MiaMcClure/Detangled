@@ -30,6 +30,14 @@ h2 {
     align-items: center;
 }
 
+.banner-register {
+    color: white;
+    background: url(../images/background_image_2.jpg) top left/cover no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .top-brands {
     color: #fff;
