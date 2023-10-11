@@ -21,6 +21,10 @@ h2 {
     text-align: center;
 }
 
+h4 {
+    text-align: center;
+}
+
 .banner {
     color: white;
     background: url(../images/green_background.jpg) top left/cover no-repeat;
