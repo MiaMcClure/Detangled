@@ -89,9 +89,7 @@
 
     <div class="banner">
         <div class="banner-text">
-            <h1>Some text here</h1>
-            <h3>more stuff</h3>
-            <h6>more stuff</h6>
+            <h1>Log in to your account</h1>
         </div>
     </div>
 
@@ -100,23 +98,27 @@
     <!--main content-->
 
     <main>
-        <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Remember Me</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-
+        <div class="login-container"> 
+            <form class="login">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input required type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input required type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                  </div>
+                  <button type="submit" class="btn btn-secondary">LOG IN</button>
+                </form>
+            
+            </form>
+        </div>
+        
     </main>
 
 
@@ -124,12 +126,56 @@
 
     <footer class="footer">
         <!--marketing section-->
+
         <section class="bottom">
-            <p>Subscribe to newsletter; follow social media</p>
+            
+            <div>
+               <br><p>Sign up for our newsletter and get 15% off your next order</p><br>
+
+               <div class="newsletter-container">
+                <div class="input-group mb-3" id="newsletter">
+                    <input type="email" class="form-control">
+                    <button class="btn btn-secondary" type="button" id="button-addon1"><img src="icons/email_icon.png" alt=""></button>
+                </div>
+               </div>
+            </div>
         </section>
 
         <!--contact and more-->
-        <p>shop about more contact...</p>
+        <hr>
+        <div class="container text-center">
+            <div class="row row-cols-3">
+              <div class="col"><a href="#" class="more">About</a></div>
+              <div class="col"> <a href="#" class="more" >FAQs</a></div>
+              <div class="col"><a href="#" class="more" >News</a></div>
+              <div class="col"><a href="#" class="more" >Careers</a></div>
+              <div class="col"><a href="#" class="more" >Orders</a></div>
+              <div class="col"><a href="#" class="more" >Returns</a></div>
+              <div class="col"><a href="#" class="more" >Rewards</a></div>
+              <div class="col"><a href="#" class="more" >Student Discount</a></div>
+              <div class="col"><a href="#" class="more" >Gift Cards</a></div>
+              <div class="col"> <a href="#" class="more" >Refunds</a></div>
+              <div class="col"><a href="#" class="more" >Shipping Information</a></div>
+              <div class="col"><a href="#" class="more" >Contact us</a></div>
+              <div class="col"><a href="#" class="more" >Shop by Brand</a></div>
+              <div class="col"><a href="#" class="more" >All Products</a></div>
+              <div class="col"><a href="#" class="more" >Shop</a></div>
+            </div>
+            
+            <!--social media links-->
+
+            <div class="social-media">
+
+                <h6>Follow us</h6>
+                <a href="https://twitter.com/?lang=en"  target="_blank"><img src="icons/twitter_icon.png" alt="twitter_icon"></a>
+                <a href="https://www.pinterest.com/" target="_blank"><img src="icons/pinterest_icon.png" alt="pinterest_icon"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="icons/tiktok_icon.png" alt="tiktok_icon"></a>
+                <a href="https://www.snapchat.com/" target="_blank"><img src="icons/snapchat_icon.png" alt="snapchat_icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="icons/instagram_icon.png" alt="tinstagram_icon"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="icons/youtube_icon.png" alt="tyoutube_icon."></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="icons/facebook_icon.png" alt="facebook_icon"></a>
+            </div>
+            
         <hr>
         <p>&copy; 2023 My Website</p>
     </footer>

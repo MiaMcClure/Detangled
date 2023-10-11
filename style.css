@@ -30,6 +30,22 @@ h2 {
     align-items: center;
 }
 
+.login {
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    padding: 40px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 14px 14px 20px #cbced1, -14px -14px 20px white;
+  }
+
+.login-container {
+    display:flex;
+    justify-content:center;
+    margin: 2em;
+}
+  
 
 .top-brands {
     color: #fff;
@@ -43,7 +59,36 @@ h2 {
     background-color:#7f4d41
 }
 
+
+#newsletter {
+    width:300px;
+}
+
+
+.newsletter-container {
+    display:flex;
+    justify-content: flex-end;
+    margin: 2em;
+}
+
 .footer {
     color:#fff;
     background-color: #414b3b;
 }
+
+.footer-container {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.social-media {
+    margin-top: 5em;
+}
+
+
+.more{
+    color:#fff;
+    text-decoration:none;
+}
+
