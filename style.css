@@ -1,0 +1,49 @@
+
+.customer {
+    display:flex;
+    justify-content: flex-end;
+    background-color: #fff;
+    margin-top: 1em;
+}
+
+.navbar {
+   background-color: #414b3b;
+}
+
+.navbar-brand {
+    color: black;
+    font-family: 'Bradley Hand', sans-serif;
+    font-size: 40px;
+    
+}
+
+h2 {
+    text-align: center;
+}
+
+.banner {
+    color: white;
+    background: url(../images/green_background.jpg) top left/cover no-repeat;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.top-brands {
+    color: #fff;
+    background-color: #414b3b;
+}
+
+
+
+
+.bottom {
+    background-color:#7f4d41
+}
+
+.footer {
+    color:#fff;
+    background-color: #414b3b;
+}
