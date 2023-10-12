@@ -111,5 +111,34 @@ h4 {
     text-decoration:none;
 }
 
+.checkout {
+    width:50%;
+}
+.checkout-container {
+    display:flex;
+    justify-content:flex-start;
+    margin:1em;
+}
 
+.short {
+    display:flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+}
+.shipping {
+    width:50%;
+}
+.shipping-container {
+    display:flex;
+}
+
+.order-container {
+    position: absolute;
+        top: 80%;
+        right: 10%;
+}
+
+.hr-checkout {
+    width:50%;
+}
 
