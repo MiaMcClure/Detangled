@@ -60,7 +60,7 @@ h4 {
     display:flex;
 }
 
-.card {
+.card-carousel {
     margin: 0 5em;
     width: calc(100%/3);
 }
@@ -114,5 +114,18 @@ h4 {
 .more{
     color:#fff;
     text-decoration:none;
+}
+
+.page-title {
+    color:#fff;
+    background-color:#7f4d41;
+    padding: 50px;
+    margin: 5em;
+   
+
+}
+
+.product-container {
+    margin:5em;
 }
 
