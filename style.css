@@ -51,30 +51,6 @@ h4 {
 }
   
 
-.top-brands {
-    color: #fff;
-    background-color: #414b3b;
-}
-
-.cards-wrapper {
-    display:flex;
-}
-
-
-
-.cards-image-wrapper {
-    height: 22vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cards-image-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
 .bottom {
     background-color:#7f4d41
 }
@@ -109,26 +85,18 @@ h4 {
     text-decoration:none;
 }
 
-.hr-checkout {
-    width:50%;
-}
 
-.payment-container {
-    width: calc(100%/2)
-}
 
 .order-container {
-    width: calc(100%/2);
+    align-items:flex-end;
     padding-left: 50px;
 }
 
-.shipping-container {
-    width: calc(100%/2);
-    
-}
+
 
 .checkout-container {
-    display:flex;
-    flex-wrap: wrap;
-    padding: 20px;
+   display:flex;
+   flex-direction:column;
+   justify-content:flex-start;
+   padding:20px;
 }

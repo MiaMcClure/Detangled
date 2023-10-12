@@ -100,70 +100,75 @@
     <main>
 
         <div class="checkout-container">
-            <!--payment method-->
-            <div class="payment-container">
-                <form>
-                    <div class="mb-3">
-                        <label for="cardnumber" class="form-label">Card number</label>
-                        <input required type="text" class="form-control" id="cardnumber">
-                    </div>
-                    <div class="mb-3">
-                        <label for="nameoncard" class="form-label">Name on card</label>
-                        <input required type="text" class="form-control" id="nameoncard">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-2">
-                            <label for="exmonth" class="form-label">Month</label>
-                            <select class="form-select" id="exmonth">
-                                <option selected></option>
-                                <option value="1">01</option>
-                                <option value="2">02</option>
-                                <option value="3">03</option>
-                            </select>
-                        </div>
-                        <div class="col-md-2">
-                            <label for="exyear" class="form-label">Year</label>
-                            <select class="form-select" id="exyear">
-                                <option selected></option>
-                                <option value="1">2023</option>
-                                <option value="2">2024</option>
-                                <option value="3">2025</option>
-                            </select>
-                        </div>
-                        <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input required type="text" class="form-control" id="inputZip">
-                        </div>
-                    </div>
-                </form>
-                <br>
-                <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Save payment method</label>
-                </div>
-                <button type="submit" class="btn btn-secondary">Add card</button>
-            </div>
-            
 
-            <!--place order-->
-            <div class="order-container sticky-top">
-                <div class="card">
-                    <div class="card-body">
-                        <div class="summery">
-                            <h6>Order Summery</h6>
-                            <ul>
-                                <li>Item(s)</li>
-                                <li>Shipping and handling</li>
-                                <li>Estimated taxes</li>
-                            </ul>
+           <div class="row row-col-2">
+            <!--payment method-->
+            <div class="col-6">
+                <div class="payment-container">
+                    <h5>Payment method</h5>
+                    <br>
+                    <form>
+                        <div class="mb-3">
+                            <label for="cardnumber" class="form-label">Card number</label>
+                            <input required type="text" class="form-control" id="cardnumber">
                         </div>
-                        <hr>
-                        <h5>Total</h5>
-                        <hr>
+                        <div class="mb-3">
+                            <label for="nameoncard" class="form-label">Name on card</label>
+                            <input required type="text" class="form-control" id="nameoncard">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2">
+                                <label for="exmonth" class="form-label">Month</label>
+                                <select class="form-select" id="exmonth">
+                                    <option selected></option>
+                                    <option value="1">01</option>
+                                    <option value="2">02</option>
+                                    <option value="3">03</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="exyear" class="form-label">Year</label>
+                                <select class="form-select" id="exyear">
+                                    <option selected></option>
+                                    <option value="1">2023</option>
+                                    <option value="2">2024</option>
+                                    <option value="3">2025</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input required type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                    </form>
+                    <br>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Save payment method</label>
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Add card</button>
+                    <hr>
+                </div>
+            </div>
+            <!--place order-->
+            <div class="col-6 sticky-top">
+                <div class="order-container ">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="summery">
+                                <h6>Order Summery</h6>
+                                <ul>
+                                    <li>Item(s)</li>
+                                    <li>Shipping and handling</li>
+                                    <li>Estimated taxes</li>
+                                </ul>
+                            </div>
+                            <hr>
+                            <h5>Total</h5>
+                            <hr>
                             <div class="col-12">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2"
-                                        required>
+                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
                                     <label class="form-check-label" for="invalidCheck2">
                                         Agree to terms and conditions
                                     </label>
@@ -172,194 +177,101 @@
                                     <button class="btn btn-secondary" type="submit">Place order</button>
                                 </div>
                             </div>
-                    </div>
-                </div>      
-
-            </div>
-            
-            <!--shipping-->
-            <div class="shipping-container">
-                <form class="shipping">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Full name</label>
-                        <input required type="text" class="form-control" id="name">
-                    </div>
-                    <div>
-                        <label for="country">Country/Region</label>
-                        <select required class="form-select form-select-sm" id="country">
-                            <option value="1">United States</option>
-                            <option value="2">Canada</option>
-                            <option value="3">Mexico</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="pnumber" class="form-label mt-3">Phone Number</label>
-                        <input required type="text" class="form-control" id="pnumber">
-                    </div>
-                    <div class="mb-3">
-                        <label for="address" class="form-label">Address</label>
-                        <input required type="text" class="form-control" id="address">
-                        <input required type="text" class="form-control mt-1">
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <label for="inputCity" class="form-label">City</label>
-                            <input type="text" class="form-control" id="inputCity">
                         </div>
-                        <div class="col-md-4">
-                            <label for="inputState" class="form-label">State</label>
-                            <select required id="inputState" class="form-select">
-                                <option selected>Choose...</option>
-                                <option>...</option>
+                    </div>
+    
+                </div>
+    
+            
+    
+    
+            </div>
+            <!--shipping address-->
+            <div class="col-6">
+                <div class="shipping-container">
+                    <h5>Shipping address</h5>
+                    <br>
+                    <form class="shipping">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full name</label>
+                            <input required type="text" class="form-control" id="name">
+                        </div>
+                        <div>
+                            <label for="country">Country/Region</label>
+                            <select required class="form-select form-select-sm" id="country">
+                                <option value="1">United States</option>
+                                <option value="2">Canada</option>
+                                <option value="3">Mexico</option>
                             </select>
                         </div>
-                        <div class="col-md-2">
-                            <label for="inputZip" class="form-label">Zip</label>
-                            <input required type="text" class="form-control" id="inputZip">
+                        <div class="mb-3">
+                            <label for="pnumber" class="form-label mt-3">Phone Number</label>
+                            <input required type="text" class="form-control" id="pnumber">
+                        </div>
+                        <div class="mb-3">
+                            <label for="address" class="form-label">Address</label>
+                            <input required type="text" class="form-control" id="address">
+                            <input required type="text" class="form-control mt-1">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="inputCity" class="form-label">City</label>
+                                <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="inputState" class="form-label">State</label>
+                                <select required id="inputState" class="form-select">
+                                    <option selected>Choose...</option>
+                                    <option>...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputZip" class="form-label">Zip</label>
+                                <input required type="text" class="form-control" id="inputZip">
+                            </div>
+                        </div>
+                    </form>
+                    <hr>
+                </div>
+            </div>
+           </div>
+           <div class="row">
+            <!--cart-->
+            <div class="col-6">
+                <div class="cart-container">
+                    <h5>Cart items</h5>
+    
+                    <div class="card mb-3" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="images/green_background.jpg" class="img-fluid  alt=" ...">
+                            </div>
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">This is a wider card with supporting text below as a natural
+                                        lead-in to additional content. This content is a little bit longer.</p>
+                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
+    
             </div>
+           </div>
+            
+
+
+           
+
         </div>
     </main>
 
 
     <!--more products-->
-    <section>
-        <h4>You may also like</h4>
-        <div id="carouselExampleAutoplaying" class="carousel carousel-dark slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="cards-wrapper">
-                        <div class="card">
-                            <div class="cards-image-wrapper">
-                                <img src="images/the_doux_mousse.jpg" alt="the_doux_mousse">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">The Doux Mousse Def</h5>
-                                <p class="card-text">The Doux Mousse Def Texture Foam gives definition, shine, and
-                                    volume to every hair type and curl pattern.</p>
-                                <a href="#" class="btn btn-primary">Add to cart</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cards-image-wrapper">
-                                <img src="images/shine_n_jam.jpg" alt="shine_n_jam">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Shine 'n Jam</h5>
-                                <p class="card-text">Ampro Pro Styl's new Shine 'n Jam Extra Hold is the gel you
-                                    have been waiting for: alcohol free, moisturizing, non-greasy, non-flaking,
-                                    extra firm hold.</p>
-                                <a href="#" class="btn btn-primary">Add to cart</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cards-image-wrapper">
-                                <img src="images/as_i_am_cowash.jpg" alt="as_i_am_cowash">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">As I Am Coconut Cowash</h5>
-                                <p class="card-text">Hydrates dry hair for more vibrant manageable natural coils and
-                                    curls. Gentle no-suds moisturizing formula.</p>
-                                <a href="#" class="btn btn-primary">Add to cart</a>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="cards-wrapper">
-                        <div class="card">
-                            <div class="cards-image-wrapper">
-                                <img src="images/king_ocean_waves.jpg" alt="king_ocean_waves">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Bobbi Boss King Ocean Waves</h5>
-                                <p class="card-text">King tips ocean wave 28" 3x braids syntheric by Bobbi Boss.
-                                    Hybrid wave braid hot water setting pre-feathered.</p>
-                                <a href="#" class="btn btn-primary">Add to cart</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cards-image-wrapper">
-                                <img src="images/the_doux_gel.jpeg" alt="the_doux_gel">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">The Doux Big Poppa Gel</h5>
-                                <p class="card-text"> Humidity-resistant and frizz-fighting formula shines & defines
-                                    all curl types with a flexible hold.</p>
-                                <a href="#" class="btn btn-primary">Add to cart</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cards-image-wrapper">
-                                <img src="images/black_vanilla_shampoo.jpg" alt="black_vanilla_shampoo">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Carol's Daughter Black Vanilla Shampoo</h5>
-                                <p class="card-text">Sulfate free shampoo cleanses and restores moisture without
-                                    adding weight to textured hair.</p>
-                                <a href="#" class="btn btn-primary">Add to cart</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="cards-wrapper">
-                        <div class="card">
-                            <div class="cards-image-wrapper">
-                                <img src="images/locsanity_spray.jpg" alt="locsanity_spray">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Locsanity Rosewater and Peppermint Daily
-                                    Moisturizing/Refreshing Spray</h5>
-                                <p class="card-text">Say goodbye to loose frizzy hair with this intense hydration
-                                    formula.</p>
-                                <a href="#" class="btn btn-primary">Add to cart</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cards-image-wrapper">
-                                <img src="images/mielle_oil.jpg" alt="mielle_oil">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Mielle Organics Rosemary Mint Scalp & Hair Strengthening Oil
-                                </h5>
-                                <p class="card-text">Both rosemary and mint essential oils are known to increase
-                                    blood circulation which allows for more oxygen to be carried to your scalp.</p>
-                                <a href="#" class="btn btn-primary">Add to cart</a>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="cards-image-wrapper">
-                                <img src="images/design_essentials_smoothie.jpg" alt="design_essentials_smoothie">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">Design Essentials Almond & Avocado Curl Enhancing Mousse</h5>
-                                <p class="card-text">This lightweight non-greasy mousse formula dries quickly so you
-                                    can say bye to frizz and hello to a stye with beautiful sheen.</p>
-                                <a href="#" class="btn btn-primary">Add to cart</a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-
-    </section>
 
 
 
