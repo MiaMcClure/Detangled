@@ -51,34 +51,6 @@ h4 {
 }
   
 
-.top-brands {
-    color: #fff;
-    background-color: #414b3b;
-}
-
-.cards-wrapper {
-    display:flex;
-}
-
-.card {
-    margin: 0 5em;
-    width: calc(100%/3);
-}
-
-.cards-image-wrapper {
-    height: 22vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cards-image-wrapper img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-
-
 .bottom {
     background-color:#7f4d41
 }
