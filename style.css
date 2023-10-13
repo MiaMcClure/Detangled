@@ -88,3 +88,16 @@ h4 {
     text-decoration:none;
 }
 
+.page-title {
+    color:#fff;
+    background-color:#7f4d41;
+    padding: 50px;
+    margin: 5em;
+}
+
+.products-container {
+    width:80vw;
+    margin:auto;
+    padding-bottom:30px;
+}
+
