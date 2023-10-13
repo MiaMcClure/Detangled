@@ -237,28 +237,75 @@
            </div>
            <div class="row">
             <!--cart-->
-            <div class="col-6">
-                <div class="cart-container">
-                    <h5>Cart items</h5>
-    
-                    <div class="card mb-3" style="max-width: 540px;">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="images/green_background.jpg" class="img-fluid  alt=" ...">
-                            </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit longer.</p>
-                                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    
+
+            <div class="cart-container">
+                <table class="table" id="cart">
+                    <thead>
+                      <tr>
+                        <th scope="col">Item</th>
+                        <th scope="col">Shipping</th>
+                        <th scope="col">Price</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">
+                            1<img class="cart-img" src="" alt="">
+                        </th>
+                        <td>
+                            <form name="shipmethod">
+                                <div>
+                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
+                                    <label class="form-check-label" for="standard">Standard shipping<p class=small>Get it by Oct 20</p></label>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-    
+                                <div>
+                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
+                                    <label class="form-check-label" for="standard">Expedited <p class=small>Get it by Oct 18 additional $11.99</p></label>
+                                </div>     
+                            </form>
+                        </td>
+                        <td>$test.99</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            2<img class="cart-img" src="" alt="">
+                        </th>
+                        <td>
+                            <form name="shipmethod">
+                                <div>
+                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
+                                    <label class="form-check-label" for="standard">Standard shipping<p class=small>Get it by Oct 20</p></label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
+                                    <label class="form-check-label" for="standard">Expedited <p class=small>Get it by Oct 18 additional $11.99</p></label>
+                                </div>     
+                            </form>
+                        </td>
+                        <td>$test.99</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">
+                            3<img class="cart-img" src="" alt="">
+                        </th>
+                        <td>
+                            <form name="shipmethod">
+                                <div>
+                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
+                                    <label class="form-check-label" for="standard">Standard shipping<p class=small>Get it by Oct 20</p></label>
+                                </div>
+                                <div>
+                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
+                                    <label class="form-check-label" for="standard">Expedited <p class=small>Get it by Oct 18 additional $11.99</p></label>
+                                </div>     
+                            </form>
+                        </td>
+                        <td>$test.99</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+            
             </div>
            </div>
             
