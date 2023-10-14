@@ -37,22 +37,27 @@ h4 {
 .banner-header {
     font-size: 5em;
 }
-.categories-container {
-   display:flex;
-   justify-content:center;
-   padding: 5em;
-   
+
+
+.categories-container {   
+    margin:auto;
+    text-align:center;
 }
+
+.category-link {
+    color:#fff;
+    text-decoration: none;
+    font-size: 60px;
+}
+
+
 .categories li {
     display:inline;
-    color: #fff;
+    text-align: center;
     background-color: #7f4d41;
-    font-size:5em;
-    border-radius:100%;
-    padding:1em;
-    margin:30px;
-    
-    
+    margin:15px;
+    border-radius:50px;
+    width: 25em;
 }
 
 .learn-container {
@@ -145,16 +150,16 @@ h4 {
 }
 
 .order-container{
-    align-items:flex-end;
     padding-left:50px;
+    min-width: 500px;
 }
 
 
 
 .checkout-container {
-   display:flex;
-   flex-direction:column;
-   justify-content:flex-start;
-   flex-wrap:wrap;
    padding:20px;
+   @media screen and (max-width:768px) {
+    display: flex;
+    flex-direction:column;
+   }
 }

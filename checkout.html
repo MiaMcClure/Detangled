@@ -96,220 +96,273 @@
 
     <!--main content-->
     <main>
-
         <div class="checkout-container">
+            <div class="row">
+                <div class="col col-md-6">
+                    <div class="row">
+                        <div class="col-sm-12 checkout">
+                            <div>
+                                <!--payment method-->
+                                <div>
+                                    <div class="payment-container">
+                                        <h5>Payment method</h5>
+                                        <br>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="cardnumber" class="form-label">Card number</label>
+                                                <input required type="text" class="form-control" id="cardnumber">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="nameoncard" class="form-label">Name on card</label>
+                                                <input required type="text" class="form-control" id="nameoncard">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-2">
+                                                    <label for="exmonth" class="form-label">Month</label>
+                                                    <select required class="form-select" id="exmonth">
+                                                        <option selected></option>
+                                                        <option value="1">01</option>
+                                                        <option value="2">02</option>
+                                                        <option value="3">03</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="exyear" class="form-label">Year</label>
+                                                    <select class="form-select" id="exyear" required>
+                                                        <option selected></option>
+                                                        <option value="1">2023</option>
+                                                        <option value="2">2024</option>
+                                                        <option value="3">2025</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="inputZip" class="form-label">Zip</label>
+                                                    <input required type="text" class="form-control" id="inputZip">
+                                                </div>
+                                            </div>
+                                            <br>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Save payment
+                                                    method</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-secondary">Add card</button>
+                                        </form>
 
-           <div class="row row-col-2">
-            <!--payment method-->
-            <div class="col-6">
-                <div class="payment-container">
-                    <h5>Payment method</h5>
-                    <br>
-                    <form>
-                        <div class="mb-3">
-                            <label for="cardnumber" class="form-label">Card number</label>
-                            <input required type="text" class="form-control" id="cardnumber">
-                        </div>
-                        <div class="mb-3">
-                            <label for="nameoncard" class="form-label">Name on card</label>
-                            <input required type="text" class="form-control" id="nameoncard">
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2">
-                                <label for="exmonth" class="form-label">Month</label>
-                                <select class="form-select" id="exmonth">
-                                    <option selected></option>
-                                    <option value="1">01</option>
-                                    <option value="2">02</option>
-                                    <option value="3">03</option>
-                                </select>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <!--end-->
                             </div>
-                            <div class="col-md-2">
-                                <label for="exyear" class="form-label">Year</label>
-                                <select class="form-select" id="exyear">
-                                    <option selected></option>
-                                    <option value="1">2023</option>
-                                    <option value="2">2024</option>
-                                    <option value="3">2025</option>
-                                </select>
+                            <!--Enter shipping information-->
+                            <div>
+                                <div>
+                                    <div class="shipping-container">
+                                        <h5>Shipping address</h5>
+                                        <br>
+                                        <form class="shipping">
+                                            <div class="mb-3">
+                                                <label for="name" class="form-label">Full name</label>
+                                                <input required type="text" class="form-control" id="name">
+                                            </div>
+                                            <div>
+                                                <label for="country">Country/Region</label>
+                                                <select required class="form-select form-select-sm" id="country">
+                                                    <option value="1">United States</option>
+                                                    <option value="2">Canada</option>
+                                                    <option value="3">Mexico</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="pnumber" class="form-label mt-3">Phone Number</label>
+                                                <input required type="text" class="form-control" id="pnumber">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="address" class="form-label">Address</label>
+                                                <input required type="text" class="form-control" id="address">
+                                                <input type="text" class="form-control mt-1">
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label for="inputCity" class="form-label">City</label>
+                                                    <input required type="text" class="form-control" id="inputCity">
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="inputState" class="form-label">State</label>
+                                                    <select required id="inputState" class="form-select">
+                                                        <option>Choose...</option>
+                                                        <option>...</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-md-2">
+                                                    <label for="shipZip" class="form-label">Zip</label>
+                                                    <input required type="text" class="form-control" id="shipZip">
+                                                </div>
+
+                                            </div>
+                                            <br>
+                                            <div>
+                                                <input type="checkbox" class="form-check-input" id="shipaddress">
+                                                <label class="form-check-label" for="shipaddress">Save shipping
+                                                    address</label>
+                                            </div>
+                                            <br>
+                                            <button type="submit" class="btn btn-secondary">Use this address</button>
+                                        </form>
+                                        <hr>
+                                    </div>
+                                </div>
+                                <!--end-->
                             </div>
-                            <div class="col-md-2">
-                                <label for="inputZip" class="form-label">Zip</label>
-                                <input required type="text" class="form-control" id="inputZip">
+                            <!--cart-->
+                            <div>
+                                <div class="cart-container">
+                                    <table class="table" id="cart">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Item</th>
+                                                <th scope="col">Shipping</th>
+                                                <th scope="col">Price</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    1<img class="cart-img" src="" alt="">
+                                                </th>
+                                                <td>
+                                                    <form name="shipmethod">
+                                                        <div>
+                                                            <input class="form-check-input" type="radio"
+                                                                name="shipmethod" id="standard">
+                                                            <label class="form-check-label" for="standard">Standard
+                                                                shipping<p class=small>Get it by Oct 20</p></label>
+                                                        </div>
+                                                        <div>
+                                                            <input class="form-check-input" type="radio"
+                                                                name="shipmethod" id="standard">
+                                                            <label class="form-check-label" for="standard">Expedited <p
+                                                                    class=small>Get
+                                                                    it by Oct 18 additional $11.99</p></label>
+                                                        </div>
+                                                    </form>
+                                                </td>
+                                                <td>$test.99</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    2<img class="cart-img" src="" alt="">
+                                                </th>
+                                                <td>
+                                                    <form name="shipmethod">
+                                                        <div>
+                                                            <input class="form-check-input" type="radio"
+                                                                name="shipmethod" id="standard">
+                                                            <label class="form-check-label" for="standard">Standard
+                                                                shipping<p class=small>Get it by Oct 20</p></label>
+                                                        </div>
+                                                        <div>
+                                                            <input class="form-check-input" type="radio"
+                                                                name="shipmethod" id="standard">
+                                                            <label class="form-check-label" for="standard">Expedited <p
+                                                                    class=small>Get
+                                                                    it by Oct 18 additional $11.99</p></label>
+                                                        </div>
+                                                    </form>
+                                                </td>
+                                                <td>$test.99</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">
+                                                    3<img class="cart-img" src="" alt="">
+                                                </th>
+                                                <td>
+                                                    <form name="shipmethod">
+                                                        <div>
+                                                            <input class="form-check-input" type="radio"
+                                                                name="shipmethod" id="standard">
+                                                            <label class="form-check-label" for="standard">Standard
+                                                                shipping<p class=small>Get it by Oct 20</p></label>
+                                                        </div>
+                                                        <div>
+                                                            <input class="form-check-input" type="radio"
+                                                                name="shipmethod" id="standard">
+                                                            <label class="form-check-label" for="standard">Expedited <p
+                                                                    class=small>Get
+                                                                    it by Oct 18 additional $11.99</p></label>
+                                                        </div>
+                                                    </form>
+                                                </td>
+                                                <td>$test.99</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <!--end-->
                             </div>
                         </div>
-                    </form>
-                    <br>
-                    <div class="mb-3 form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                        <label class="form-check-label" for="exampleCheck1">Save payment method</label>
                     </div>
-                    <button type="submit" class="btn btn-secondary">Add card</button>
-                    <hr>
                 </div>
-            </div>
-            <!--place order-->
-            <div class="col-6 sticky-top">
-                <div class="order-container">
-                    <div class="card">
-                        <div class="card-body">
-                            <div class="summery">
-                                <h6>Order Summery</h6>
-                                <ul>
-                                    <li>Item(s)</li>
-                                    <li>Shipping and handling</li>
-                                    <li>Estimated taxes</li>
-                                </ul>
-                            </div>
-                            <hr>
-                            <h5>Total</h5>
-                            <hr>
-                            <div class="col-12">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
-                                    <label class="form-check-label" for="invalidCheck2">
-                                        Agree to terms and conditions
-                                    </label>
+                <!--place order-->
+                <div class="col-sm-12 col-lg-6">
+                    <div class="sticky-top" id="test-4">
+                        <div class="order-container sticky-top">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="summery">
+                                        <h6>Order Summery</h6>
+                                        <table class="table">
+                                            <tr>
+                                                <th>Item(s)</th>
+                                                <td>...</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Shipping and handling</th>
+                                                <td>...</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Estimated taxes</th>
+                                                <td>...</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Discounts</th>
+                                                <td>...</td>
+                                            </tr>
+                                        </table>
+
+                                    </div>
+
+                                    <h5>Total</h5>
+                                    <hr>
+                                    <div class="col-12">
+                                        <form>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value="" id="agree"
+                                                    required>
+                                                <label class="form-check-label" for="agree">
+                                                    Agree to terms and conditions
+                                                </label>
+                                                <button class="btn btn-secondary" type="submit">Place order</button>
+                                            </div>
+                                        </form>
+                                        
+                                        <div>
+
+                                        </div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <button class="btn btn-secondary" type="submit">Place order</button>
-                                </div>
                             </div>
+
                         </div>
+
                     </div>
-    
-                </div>
-    
-            
-    
-    
-            </div>
-            <!--shipping address-->
-            <div class="col-6">
-                <div class="shipping-container">
-                    <h5>Shipping address</h5>
-                    <br>
-                    <form class="shipping">
-                        <div class="mb-3">
-                            <label for="name" class="form-label">Full name</label>
-                            <input required type="text" class="form-control" id="name">
-                        </div>
-                        <div>
-                            <label for="country">Country/Region</label>
-                            <select required class="form-select form-select-sm" id="country">
-                                <option value="1">United States</option>
-                                <option value="2">Canada</option>
-                                <option value="3">Mexico</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="pnumber" class="form-label mt-3">Phone Number</label>
-                            <input required type="text" class="form-control" id="pnumber">
-                        </div>
-                        <div class="mb-3">
-                            <label for="address" class="form-label">Address</label>
-                            <input required type="text" class="form-control" id="address">
-                            <input required type="text" class="form-control mt-1">
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <label for="inputCity" class="form-label">City</label>
-                                <input type="text" class="form-control" id="inputCity">
-                            </div>
-                            <div class="col-md-4">
-                                <label for="inputState" class="form-label">State</label>
-                                <select required id="inputState" class="form-select">
-                                    <option selected>Choose...</option>
-                                    <option>...</option>
-                                </select>
-                            </div>
-                            <div class="col-md-2">
-                                <label for="inputZip" class="form-label">Zip</label>
-                                <input required type="text" class="form-control" id="inputZip">
-                            </div>
-                        </div>
-                    </form>
-                    <hr>
+
+                    <!--end-->
                 </div>
             </div>
-           </div>
-           <div class="col-6">
-            <!--cart-->
-            <div class="cart-container">
-                <table class="table" id="cart">
-                    <thead>
-                      <tr>
-                        <th scope="col">Item</th>
-                        <th scope="col">Shipping</th>
-                        <th scope="col">Price</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <th scope="row">
-                            1<img class="cart-img" src="" alt="">
-                        </th>
-                        <td>
-                            <form name="shipmethod">
-                                <div>
-                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
-                                    <label class="form-check-label" for="standard">Standard shipping<p class=small>Get it by Oct 20</p></label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
-                                    <label class="form-check-label" for="standard">Expedited <p class=small>Get it by Oct 18 additional $11.99</p></label>
-                                </div>     
-                            </form>
-                        </td>
-                        <td>$test.99</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">
-                            2<img class="cart-img" src="" alt="">
-                        </th>
-                        <td>
-                            <form name="shipmethod">
-                                <div>
-                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
-                                    <label class="form-check-label" for="standard">Standard shipping<p class=small>Get it by Oct 20</p></label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
-                                    <label class="form-check-label" for="standard">Expedited <p class=small>Get it by Oct 18 additional $11.99</p></label>
-                                </div>     
-                            </form>
-                        </td>
-                        <td>$test.99</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">
-                            3<img class="cart-img" src="" alt="">
-                        </th>
-                        <td>
-                            <form name="shipmethod">
-                                <div>
-                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
-                                    <label class="form-check-label" for="standard">Standard shipping<p class=small>Get it by Oct 20</p></label>
-                                </div>
-                                <div>
-                                    <input class="form-check-input" type="radio" name="shipmethod" id="standard">
-                                    <label class="form-check-label" for="standard">Expedited <p class=small>Get it by Oct 18 additional $11.99</p></label>
-                                </div>     
-                            </form>
-                        </td>
-                        <td>$test.99</td>
-                      </tr>
-                    </tbody>
-                  </table>
-            </div>
-            
-            </div>
-           </div>
-            
-
-
-           
-
+        </div>
+        </div>
         </div>
     </main>
 
