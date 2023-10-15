@@ -198,3 +198,18 @@ h4 {
     flex-direction:column;
    }
 }
+
+/*newsletter formatting */
+
+.bottom {
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    background-color:#7f4d41;
+    padding:25px;
+}
+
+
+#newsletter {
+    width:400px;
+}
