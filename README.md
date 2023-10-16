@@ -42,9 +42,9 @@ This is a website for an e-commerce store that sells hair supply products for pe
 ##  Images
 
 ![home_page](screenshots/home_page.png)
-![login] (screenshots/login_page.png)
-![register] (screenshots/register_page.png)
-![products_hair] (screenshots/products_hair_page.png)
-![products_style] (screenshots/products_style_page.png)
-![products_wash] (screenshots/products_wash_page.png)
+![login](screenshots/login_page.png)
+![register](screenshots/register_page.png)
+![products_hair](screenshots/products_hair_page.png)
+![products_style](screenshots/products_style_page.png)
+![products_wash](screenshots/products_wash_page.png)
 ![checkout_page](screenshots/checkout_page.png)
