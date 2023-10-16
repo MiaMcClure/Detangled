@@ -75,22 +75,33 @@ h4 {
     width: 25em;
 }
 
-.learn-container {
-    display:flex;
-    color: #fff;
-    background-color:#414b3b;
-    margin-bottom: 50px;
-}
 
-.home-img {
+/* home page styling */
+
+.home-img{
+    max-width: 300px;
     margin:2em;
+ }
+.home-container {
+    text-align:center;
+}
+
+ #home-learn {
+    color: #fff;
+    background-color: #414b3b;
+    
+}
+.home-container h2 {
+    color:#fff;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(94, 86, 72);
+}
+.home-container p {
+    margin:auto;
+    padding:2em;
 }
 
 
-.stylist-container {
-    display:flex;
-    margin-bottom:50px;
-}
 
 .login {
     width: 350px;
@@ -108,28 +119,16 @@ h4 {
     margin: 2em;
 }
   
-/* learn section styling */
-
-.home-container {
-    color: #fff;
-    background-color: #414b3b;
-    text-align:center;
-}
-
-.home-container p {
-    margin-top:5em;
+.survey-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 }
 
 
 
-/* stylist section styling */
-.home-container-2 {
-    text-align:center;
-}
 
-.home-container-2 p {
-    margin-top:5em;
-}
 
 
 .bottom {
