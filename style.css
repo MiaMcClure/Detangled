@@ -216,10 +216,6 @@ h4 {
     margin: 5em;
 }
 
-.ad-img-wrapper {
-    height:20vw;
-}
-
 .card-footer {
     background-color: white;
     border: none;
@@ -229,4 +225,15 @@ h4 {
     width:80vw;
     margin:auto;
     padding-bottom:30px;
+}
+
+
+.image-wrapper {
+    height:22vw;
+    margin:0 auto;
+}
+
+.image-wrapper img {
+    max-width: 100%;
+    max-height: 100%;
 }

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detangled</title>
+    <!--link Bootstrap-->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!--link custom CSS-->
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!--link js for Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+
+    <!--header section-->
+
+    <header>
+        <!--User login and Registration links-->
+        <div class="customer">
+            <img type="button" data-bs-toggle="dropdown" aria-expanded="false" src="icons/user_icon.png"
+                alt="user_icon">
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="login.html">Login</a></li>
+                <li><a class="dropdown-item" href="registration.html">Register</a></li>
+            </ul>
+            <a href="checkout.html"><img src="icons/shopping cart.png" alt="cart"></a>
+        </div>
+
+
+
+    </header>
+    
+
+    <!--navigation Secion-->
+
+    <nav class="navbar navbar-dark  navbar-expand-sm">
+        <h1><a href="index.html" class="navbar-brand">DeTangled</a></h1>
+        <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler"
+            aria-controls="navbarnav" aria-expanded="false" aria-label="Toggle Navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item-active dropdown"><a href="#" class="nav-link active dropdown-toggle"
+                        id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a href="products.html" class="dropdown-item">Shampoos and Conditioners</a></li>
+                        <li><a href="products-2.html" class="dropdown-item">Styling products</a></li>
+                        <li><a href="products-3.html" class="dropdown-item">Braiding hair and extenstions</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item-active dropdown"><a href="#" class="nav-link  dropdown-toggle" id="navbarDropdown"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false">Learn</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a href="#" class="dropdown-item">Protective styles</a></li>
+
+                    </ul>
+                </li>
+                <li class="nav-item-active"><a href="#" class="nav-link">Stylist</a> </li>
+
+            </ul>
+
+        </div>
+        <form class="d-flex">
+            <input type="text" class="form-control me-2">
+            <button type="submit" class="btn btn-secondary">Search</button>
+
+        </form>
+
+    </nav>
+
+
+    
+    <!--banner-->
+
+    <div class="banner">
+        <div class="banner-text">
+            <h1>Shop our products</h1>
+        </div>
+    </div>
+
+
+
+    <!--main content-->
+
+    <main>
+        <!--page title-->
+        <div class="page-title">
+            <h2>Style and Maintenance Products</h2>
+        </div>
+
+        <!--page content-->
+
+        <div class="products-wrapper">
+
+        </div>
+
+        <div class="products-container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 g-3">
+                    <div class="card h-100">
+                        <div class="image-wrapper">
+                            <img src="images/products-style/the_doux_mousse.jpg" class="card-img-top" alt="doux_mousse">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Doux Mousse Def Texture Foam</h5>
+                            <p class="card-text">This dual-use mousse provides the perfect amount of hold to define your
+                                curls or control your sleek look. The Doux Mousse Def Texture Foam gives definition,
+                                shine, and volume to every hair type and curl pattern. Enjoy the touchable control free
+                                of crunch and flaking</p>
+                        </div>
+                        <div class="card-footer">
+                            <br>
+                            <p>$ 14.99</p>
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <br>
+                            <a href="#" class="btn btn-light">learn more</a>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-12 col-md-6 col-lg-4 g-3">
+                    <div class="card h-100">
+                        <div class="image-wrapper">
+                            <img src="images/products-style/shine_n_jam.jpg" class="card-img-top" alt="shine_n_jam_gel">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Shine 'n Jam Conditioning Gel </h5>
+                            <p class="card-text">The gel you have been waiting for: free of alcohol, parabens, wax,
+                                petrolatum and silicones. This moisturizing, non-flaking gel has a firm, non-greasy
+                                hold. Enhanced with Honey Extract to help strengthen hair. Great for soft waves, braids,
+                                locks, twists or any style your heart desires</p>
+                        </div>
+                        <div class="card-footer">
+                            <br>
+                            <p>$ 14.30</p>
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/half_star.png" alt="half_star">
+                            <br>
+                            <a href="#" class="btn btn-light">learn more</a>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-12 col-md-6 col-lg-4 g-3">
+                    <div class="card h-100">
+                        <div class="image-wrapper">
+                            <img src="images/products-style/locsanity_spray.jpg" class="card-img-top"
+                                alt="locsanity_spray">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Locsanity Rosewater and Peppermint Daily Moisturizing/Refreshing
+                                Spray</h5>
+                            <p class="card-text">Strengthen and nourish your scalp and dreadlocks with Locsanity
+                                Rosewater & Peppermint Daily Moisturizing Refreshing Dreadlock Spray. Say goodbye to
+                                loose frizzy hair with this intense hydration formula.</p>
+                        </div>
+                        <div class="card-footer">
+                            <br>
+                            <p>$ 16.34</p>
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/half_star.png" alt="half_star">
+                            <br>
+                            <a href="#" class="btn btn-light">learn more</a>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-12 col-md-6 col-lg-4 g-3">
+                    <div class="card h-100">
+                        <div class="image-wrapper">
+                            <img src="images/products-style/de_creme.jpg" class="card-img-top"
+                                alt="design_essentials_cream">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Braid & Twist-Out Strengthening Crème</h5>
+                            <p class="card-text">Whether you braid it in or twist it out, the Design Essentials® Natural
+                                African Chebe Braid & Twist-Out Strengthening Crème delivers high definition coils and
+                                twist outs that are smooth, soft, and shiny. This leave-in therapy contains a blend of
+                                Chebe powder, African extracts and sunflower oil to deliver strong, moisturized and
+                                beautiful hair
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <br>
+                            <p>$ 16.99</p>
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <br>
+                            <a href="#" class="btn btn-light">learn more</a>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-12 col-md-6 col-lg-4 g-3">
+                    <div class="card h-100">
+                        <div class="image-wrapper">
+                            <img src="images/products-style/the-doux_cream.jpg" class="card-img-top"
+                                alt="doux_styling_cream">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">The Doux C.R.E.A.M. Twist & Curl Cream</h5>
+                            <p class="card-text">Defines and elongates Twist-outs and curls. Ultra moisturizing formula
+                                helps to aid in length retention by restoring moisture balance, increase elasticity, and
+                                preventing breakage.</p>
+                        </div>
+                        <div class="card-footer">
+                            <br>
+                            <p>$ 15.99</p>
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <br>
+                            <a href="#" class="btn btn-light">learn more</a>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ccol-12 col-md-6 col-lg-4 g-3">
+                    <div class="card h-100">
+                        <div class="image-wrapper">
+                            <img src="images/products-style/mielle_oil.jpg" class="card-img-top" alt="mielle_oil">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Mielle Organics Rosemary Mint Scalp & Hair Strengthening Oil</h5>
+                            <p class="card-text">Our nutrient-rich, biotin-infused treatment can be used as part of your
+                                everyday hair care routine or as an intensive deep treatment to prevent damage for
+                                strong, lustrous hair with a fresh, invigorating scent
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <br>
+                            <p>$ 9.99</p>
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/full_star.png" alt="full_star">
+                            <img src="icons/half_star.png" alt="half_star">
+                            <br>
+                            <a href="#" class="btn btn-light">learn more</a>
+                            <a href="#" class="btn btn-primary">Add to cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </main>
+
+    
+
+    <!--bottom section with products-->
+
+   
+
+
+
+
+
+
+    <footer class="footer">
+         <!--newsletter subscription-->
+         <section>
+            <div class="bottom">
+                <label for="subscribe">
+                    <h6>Sign up for our newsletter and get 15% off your next order</h6>
+                </label>
+                <div class="input-group mb-3" id="newsletter">
+                    <input type="email" class="form-control" name="s">
+                    <button class="btn btn-secondary" type="button" id="button-addon1"><img src="icons/email_icon.png" alt=""></button>
+                </div>
+            </div>
+        </section>
+
+        <!--contact and more-->
+        <hr>
+        <div class="container text-center">
+            <div class="row row-cols-3">
+                <div class="col"><a href="#" class="more">About</a></div>
+                <div class="col"> <a href="#" class="more">FAQs</a></div>
+                <div class="col"><a href="#" class="more">News</a></div>
+                <div class="col"><a href="#" class="more">Careers</a></div>
+                <div class="col"><a href="#" class="more">Orders</a></div>
+                <div class="col"><a href="#" class="more">Returns</a></div>
+                <div class="col"><a href="#" class="more">Rewards</a></div>
+                <div class="col"><a href="#" class="more">Student Discount</a></div>
+                <div class="col"><a href="#" class="more">Gift Cards</a></div>
+                <div class="col"> <a href="#" class="more">Refunds</a></div>
+                <div class="col"><a href="#" class="more">Shipping Information</a></div>
+                <div class="col"><a href="#" class="more">Contact us</a></div>
+                <div class="col"><a href="#" class="more">Shop by Brand</a></div>
+                <div class="col"><a href="#" class="more">All Products</a></div>
+                <div class="col"><a href="#" class="more">Shop</a></div>
+            </div>
+
+            <!--social media links-->
+
+            <div class="social-media">
+
+                <h6>Follow us</h6>
+                <a href="https://twitter.com/?lang=en" target="_blank"><img src="icons/twitter_icon.png"
+                        alt="twitter_icon"></a>
+                <a href="https://www.pinterest.com/" target="_blank"><img src="icons/pinterest_icon.png"
+                        alt="pinterest_icon"></a>
+                <a href="https://www.tiktok.com/" target="_blank"><img src="icons/tiktok_icon.png"
+                        alt="tiktok_icon"></a>
+                <a href="https://www.snapchat.com/" target="_blank"><img src="icons/snapchat_icon.png"
+                        alt="snapchat_icon"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img src="icons/instagram_icon.png"
+                        alt="tinstagram_icon"></a>
+                <a href="https://www.youtube.com/" target="_blank"><img src="icons/youtube_icon.png"
+                        alt="tyoutube_icon."></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="icons/facebook_icon.png"
+                        alt="facebook_icon"></a>
+            </div>
+
+            <hr>
+            <p>&copy; 2023 My Website</p>
+    </footer>
+
+
+
+</body>
+
+</html>
